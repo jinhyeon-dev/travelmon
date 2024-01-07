@@ -6,19 +6,16 @@ class MainScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        body: ListView(
-          children: [ 
-            Row(
-              children: [ 
-                Container(
-                  
-                ),
-              ],
-            ),
-          ],
-        ),
-      ),
+      home: TopBar(),
     );
+  }
+}
+
+class TopBar extends StatelessWidget {
+  const TopBar({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Placeholder();
   }
 }
